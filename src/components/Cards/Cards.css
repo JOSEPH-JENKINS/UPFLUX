@@ -1,0 +1,166 @@
+.topBar{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.card-search-form{
+    width: 60%;
+}
+
+.card-search-entry-form{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.card-search-entry-form input{
+    height: 100%;
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: inherit;
+    border: 2px solid #333;
+    padding: 10px 20px;
+}
+
+.dropdown-input,
+.sort-results{
+    margin-left: 10px;
+}
+
+.dropdown-input select,
+.sort-results select{
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.results-data{
+    display: flex;
+    align-items: center;
+}
+
+.results-data p{
+    font-weight: 700;
+    color: #2378c2;
+    font-size: 14px;
+}
+
+.sort-results select{
+    padding: 10px;
+    border: 2px solid #333;
+    color: #333;
+}
+
+.cards{
+    width: 75%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    height: 350px;
+    padding: 10px;
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(#fa9dfa, #323232);
+}
+
+.card-details{
+    position: absolute;
+    padding:10px 5px;
+    bottom: 0;
+}
+
+.card-details h1{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.card-profession,
+.card-study{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.love-icon{
+    float: right;
+}
+
+.card-profession p,
+.card-study p{
+    margin-left: 5px;
+}
+
+@media (max-width: 500px){
+    .search-input,
+    .results-data{
+        display: none;
+    }
+    .topBar{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .card-search-form{
+        width: 100%;
+        flex: 1;
+    }
+    .card-search-entry-form{
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: space-between;
+    }
+    .cards{
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin-right: none;
+        color: black;
+        background: linear-gradient(#b8c4ff, #f3ceb0 70%);
+    }
+    .card h1{
+        font-size: 18px;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .dropdown-input,
+    .sort-results{
+        margin-left: 0px;
+    }
+    .dropdown-input select{
+        width: 100%;
+        background: #eee;
+        border: none;
+        padding: 10px 40px;
+        color: #2378c2;
+    }
+}
